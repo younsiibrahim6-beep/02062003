@@ -1,0 +1,67 @@
+body{
+    font-family: Arial;
+    text-align:center;
+    background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    overflow:hidden;
+  }
+  
+  h1{
+    color:white;
+    text-shadow: 0 0 10px #fff;
+    animation: glow 2s infinite alternate;
+  }
+  
+  @keyframes glow{
+    from {text-shadow:0 0 5px #fff;}
+    to {text-shadow:0 0 20px #ff0;}
+  }
+  
+  #loveBtn, #playMusicBtn{
+    font-size:30px;
+    padding:15px 40px;
+    border:none;
+    border-radius:50px;
+    background:red;
+    color:white;
+    cursor:pointer;
+    margin-top:20px;
+    transition:0.3s;
+  }
+  
+  #page2{
+    display:none;
+    padding:40px;
+    color:white;
+    position:relative;
+  }
+  
+  .from{
+    margin-top:40px;
+    font-size:22px;
+  }
+  
+  .heart{
+    position:absolute;
+    color:red;
+    font-size:30px;
+    animation:float 4s linear infinite;
+  }
+  
+  @keyframes float{
+    0%{transform:translateY(0);}
+    100%{transform:translateY(-800px);}
+  }
+  
+  canvas{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+  }
